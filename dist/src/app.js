@@ -12,7 +12,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 5000;
 const corsOptions = {
-    origin: 'https://pharmacy-react-khaki.vercel.app', // Vercel domain
+    origin: ['https://pharmacy-react-khaki.vercel.app', 'http://localhost:3000'],
 };
 app.use((0, cors_1.default)(corsOptions));
 app.use(express_1.default.json());
