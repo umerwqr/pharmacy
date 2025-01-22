@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'https://pharmacy-react-khaki.vercel.app',  // Vercel domain
+  origin: ['https://pharmacy-react-khaki.vercel.app', 'http://localhost:3000'],
 };
 
 app.use(cors(corsOptions));
