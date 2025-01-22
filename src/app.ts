@@ -9,12 +9,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'https://pharmacy-react-khaki.vercel.app', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  allowedHeaders: ['Content-Type', 'Authorization'], 
+  origin: 'https://pharmacy-react-khaki.vercel.app',  // Vercel domain
 };
 
-app.use(cors(corsOptions));  
+app.use(cors(corsOptions));
 app.use(express.json());
 
 baseRoute(app);
